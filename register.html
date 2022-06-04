@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <title>REGISTER</title>
+</head>
+<body>
+    <main>
+        <section>
+            <nav>
+                <ul id="ww" class="topnav">
+                    <li id="nav" style="float:left" class="right"><a href="register.html" class="active">Register</a></li>
+                    <li  id="nav" style="float:right" class="right"><a href="login.html" id="a">Login</a></li>
+                </ul>
+            </nav>
+        </section>
+        <header>WELCOME TO OUR REGISTRAION PAGE</header>
+        <section>
+            <div class="container">
+                <form action="about.html">
+                    <label for="first">First Name</label>
+                    <input type="text" placeholder="Samuel Effion" id="first" required><br><br>
+                    <label for="second">Last Name</label>
+                    <input type="text" placeholder="Samuel Effion" id="second" required><br><br>
+                    <label for="phone">phone</label><br>
+                    <input type="tel" placeholder="080654217643" required name="phone" maxlength="15" minlength="+"><br><br>
+                    <label for="gender">Select your gender</label>
+                    <select>
+                        <option>select</option>
+                        <option value="male" gender>Male</option>
+                        <option value="female" gender>Female</option>
+                    </select><br><br>
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="country" required><br><br>
+                    <label for="state">State/province</label><br>
+                    <input type="text" placeholder="Akwa Ibom" required><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" required placeholder="samueleffiong@gmail.com"><br><br>
+                    <label for="password">password</label><br>
+                    <input type="password" required id="password" placeholder="Password" onkeyup='check();'pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+                    <label for="confirm">Confirm password</label><br>
+                    <input type="password" required id="confirm_password" placeholder="Confirm Password" onkeyup='check() ;'pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+            
+        </section>
+
+    
+    </main>
+    <footer>&#9400; SAMUEL EFFIONG FOR ZURI TEAM</footer>
+</body>
+</html>
