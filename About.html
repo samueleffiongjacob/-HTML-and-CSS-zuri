@@ -12,16 +12,32 @@
 </head>
 <body>
     <main>
-        <div>
+        <section>
             <nav>
                 <ul id="ww" class="topnav">
                     <li id="nav"><a href="about.html" class="active">About</a></li>
-                    <li id="nav"><a href="contact.html" >Contact</a></li>
+                    <li id="nav"><a href="contact.html">Contact</a></li>
                     <li id="nav" style="float:right" class="right"><a href="register.html">Register</a></li>
                     <li id="nav" style="float:right" class="right"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
-        </div>
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobilenav">
+                <a href="about.html" class="active">About</a>
+                <!-- Top Navigation Menu -->
+                <div id="myLinks">
+                    <a href="contact.html">Contact</a>
+                    <a href="register.html">Register</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </section>
+
+
         <header>ABOUT ME</header>
         <section class="content">
             <div class="container1">
@@ -96,5 +112,6 @@
         </section>
     </main>
     <footer> &#9400; SAMUEL EFFIONG FOR ZURI TEAM</footer>
+    <script src="index.js"></script>
 </body>
 </html>
